@@ -1,3 +1,4 @@
+
 public class NoFly implements Flyable{
     @Override
     public void fly() {

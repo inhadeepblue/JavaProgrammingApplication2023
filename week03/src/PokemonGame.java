@@ -1,3 +1,4 @@
+
 public class PokemonGame {
     public static void main(String[] args) {
 //        Pokemon p0 = new Pokemon();
@@ -19,6 +20,10 @@ public class PokemonGame {
         JetPack jetPack = new JetPack();
         p1.setFlyable(jetPack);  // NoFly 객체 -> JetPack 객체로
         p1.performFly();
+
+        Balloon balloon = new Balloon();
+        s1.setFlyable(balloon);
+        s1.performFly();
 
 //        c1.attack();
 //        c1.evolve();
