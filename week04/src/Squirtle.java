@@ -2,7 +2,7 @@
 public class Squirtle extends Pokemon{
     public Squirtle(Flyable f) {
         super();  // 부모 클래스의 기본 생성자 호출 (생략 가능)
-        System.out.println("자식 클래스(꼬부기)의 기본 생성자");
+        System.out.println("꼬북꼬북..");
         //this.setLevel(1);
         this.level = 1;
         this.setHp(44);
