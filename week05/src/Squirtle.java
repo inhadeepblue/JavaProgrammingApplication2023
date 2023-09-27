@@ -5,7 +5,8 @@ public class Squirtle extends Pokemon{
         System.out.println("꼬북꼬북..");
         //this.setLevel(1);
         this.level = 1;
-        this.attackRate = 48;
+        //this.attackRate = 48;  // 0단계 진화 포켓몬스터의 경우 최대 공격력과 최소 공격력의 차를 3으로 두고 랜덤 추출
+        this.attackRate = (int)(Math.random() * 4) + 45;  // 45 ~ 48
         this.defenceRate = 65;
         this.setHp(44);
         this.name = "꼬부기";

@@ -6,6 +6,9 @@ public abstract class Pokemon {
     protected String name;
     protected int attackRate;
     protected int defenceRate;
+
+    protected String[] skills;  // 3가지 skill 추가 예정
+    protected int[] specialAttackRate;
     private static int pokemonCount = 0;  // 클래스(정적) 변수
 
     Flyable flyable;  // 연관 관계
