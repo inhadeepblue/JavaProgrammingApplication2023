@@ -43,7 +43,7 @@ public class PokemonGame {
             System.out.print("\t1) 전투   2) 도망   3) 종료 : ");
             menu = scanner.nextInt();
             if(menu == 1){
-                System.out.print("전투 기술 :");
+                System.out.print("전투 기술 : ");
                 player.attack(enemy, scanner.next());
             }else if(menu == 2){
 
