@@ -10,7 +10,7 @@ public class Charizard extends Pokemon{
         this.name = "리자몽";
         this.flyable = f; // Association, has-a (Aggregation)
         this.skills = new String[]{"화염방사", "용의숨결", "할퀴기"};
-        this.specialAttackRate = new int[]{90, 60 , 40};
+        this.specialAttackRate = new int[]{90, 60, 40};
     }
 
     public Charizard(int level, int hp, String name) {
