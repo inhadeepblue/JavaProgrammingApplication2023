@@ -15,6 +15,8 @@ public class ListDemo02 {
         specialAttackRate.add(90);
         specialAttackRate.add(60);
         specialAttackRate.add(40);
+        System.out.println(skills.get(1) + " / " + specialAttackRate.get(1));
+
         for(String skill : skills)
             System.out.println(skill);
         for (Integer rate : specialAttackRate)
