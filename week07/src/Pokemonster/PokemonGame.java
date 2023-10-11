@@ -64,7 +64,13 @@ public class PokemonGame {
                 }
             }
         }catch (InputMismatchException err){
-            System.out.println("입력 값은 숫자입니다.");
+            System.out.println("입력 값은 숫자로 입력하셔야 합니다.");
+            System.out.println("예외 내용 : " + err.getMessage());
+        }catch (Exception err){
+            System.out.println("예외가 발생했습니다.");
+            System.out.println("예외 내용 : " + err.getMessage());
+        }finally {
+            System.out.println("프로그램 종료!");
         }
     }
 }
