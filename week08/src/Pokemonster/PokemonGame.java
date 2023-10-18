@@ -63,9 +63,11 @@ public class PokemonGame {
                     enemy.attack(player, (int)(Math.random() * 3)+1);
                 }else if(menu == 2){
 
-                }else{
+                }else if(menu == 3){
                     System.out.println("게임을 종료합니다.");
                     break;
+                }else{
+                    System.out.println("메뉴에서 선택하세요");
                 }
             }
         }catch (InputMismatchException err) {
