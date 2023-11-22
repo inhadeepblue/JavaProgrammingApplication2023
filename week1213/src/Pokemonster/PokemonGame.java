@@ -44,7 +44,8 @@ public class PokemonGame {
                 if(menu == 1){
                     while(true){
                         //System.out.print("전투 기술 1) " + player.skills[0] + "   2) " +  player.skills[1] + "   3) " +  player.skills[2] + " : ");
-                        System.out.print("전투 기술 1) " + player.skills.get(0) + "   2) " +  player.skills.get(1) + "   3) " +  player.skills.get(2) + " : ");
+                        //System.out.print("전투 기술 1) " + player.skills.get(0) + "   2) " +  player.skills.get(1) + "   3) " +  player.skills.get(2) + " : ");
+                        System.out.print("전투 기술 1) " + player.skills.get(1) + "   2) " +  player.skills.get(2) + "   3) " +  player.skills.get(3) + " : ");
                         skillMenu = scanner.nextInt();
                         if (skillMenu <= player.skills.size())
                         {
