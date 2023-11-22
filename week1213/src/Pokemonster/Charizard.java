@@ -3,6 +3,7 @@ package Pokemonster;
 import fly.Flyable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Charizard extends Pokemon{
     public Charizard(Flyable f) {
@@ -17,15 +18,26 @@ public class Charizard extends Pokemon{
         this.flyable = f; // Association, has-a (Aggregation)
 //        this.skills = new String[]{"화염방사", "용의숨결", "할퀴기"};
 //        this.specialAttackRate = new int[]{90, 60, 40};
-        this.skills = new ArrayList<>();
-        this.skills.add("화염방사");
-        this.skills.add("용의숨결");
-        this.skills.add("할퀴기");
 
-        this.specialAttackRate = new ArrayList<>();
-        this.specialAttackRate.add(90);
-        this.specialAttackRate.add(60);
-        this.specialAttackRate.add(40);
+//        this.skills = new ArrayList<>();
+//        this.skills.add("화염방사");
+//        this.skills.add("용의숨결");
+//        this.skills.add("할퀴기");
+//
+//        this.specialAttackRate = new ArrayList<>();
+//        this.specialAttackRate.add(90);
+//        this.specialAttackRate.add(60);
+//        this.specialAttackRate.add(40);
+
+        this.skills = new HashMap<>();
+        this.skills.put(1, "화염방사");
+        this.skills.put(2, "용의숨결");
+        this.skills.put(3, "할퀴기");
+
+        this.specialAttackRate = new HashMap<>();
+        this.specialAttackRate.put("화염방사", 90);
+        this.specialAttackRate.put("용의숨결", 60);
+        this.specialAttackRate.put("할퀴기", 40);
     }
 
     public Charizard(int level, int hp, String name) {

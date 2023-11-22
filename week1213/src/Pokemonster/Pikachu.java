@@ -4,6 +4,7 @@ import fly.Flyable;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Pikachu extends Pokemon{
     public Pikachu(Flyable f) {
@@ -29,8 +30,18 @@ public class Pikachu extends Pokemon{
 //        this.specialAttackRate.add(65);
 //        this.specialAttackRate.add(20);
 
-        this.skills = new ArrayList<>(Arrays.asList("10만볼트", "스파크", "볼부비부비"));
-        this.specialAttackRate = new ArrayList<>(Arrays.asList(90, 65, 20));
+//        this.skills = new ArrayList<>(Arrays.asList("10만볼트", "스파크", "볼부비부비"));
+//        this.specialAttackRate = new ArrayList<>(Arrays.asList(90, 65, 20));
+
+        this.skills = new HashMap<>();
+        this.skills.put(1, "10만볼트");
+        this.skills.put(2, "스파크");
+        this.skills.put(3, "볼부비부비");
+
+        this.specialAttackRate = new HashMap<>();
+        this.specialAttackRate.put("10만볼트", 90);
+        this.specialAttackRate.put("스파크", 65);
+        this.specialAttackRate.put("볼부비부비", 20);
     }
 
     @Override
