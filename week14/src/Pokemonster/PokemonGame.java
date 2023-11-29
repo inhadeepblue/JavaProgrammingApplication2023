@@ -3,14 +3,14 @@ package Pokemonster;
 import fly.NoFly;
 import fly.Wings;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
 public class PokemonGame {
     public static Pokemon enemy = null;
+    public static int i = 0;
     public static void main(String[] args) {
         System.out.println("포켓몬 게임을 시작합니다...");
 
@@ -45,7 +45,22 @@ public class PokemonGame {
                     while(true){
                         //System.out.print("전투 기술 1) " + player.skills[0] + "   2) " +  player.skills[1] + "   3) " +  player.skills[2] + " : ");
                         //System.out.print("전투 기술 1) " + player.skills.get(0) + "   2) " +  player.skills.get(1) + "   3) " +  player.skills.get(2) + " : ");
-                        System.out.print("전투 기술 1) " + player.skills.get(1) + "   2) " +  player.skills.get(2) + "   3) " +  player.skills.get(3) + " : ");
+
+                        System.out.print("전투 기술\n");
+                        Collection<String> skillValues = player.skills.values();
+                        ArrayList<String> skillLists = new ArrayList<String>(skillValues);
+
+//                        for(String s : listOfValues)
+//                            System.out.println(s + " ");
+
+//                        for(int i = 0; i < skillLists.size(); i++)
+//                            System.out.println((i+1) + ") " + skillLists.get(i));
+
+                        i = 0;
+                        skillLists.stream().forEach(s -> {
+                            System.out.println(++i + ") " + s);
+                        });
+
                         skillMenu = scanner.nextInt();
                         if (skillMenu <= player.skills.size())
                         {
@@ -93,7 +108,7 @@ public class PokemonGame {
             System.out.println("프로그램 종료!");
         }
     }
-    private static void produceEnemy() {
+    public static void produceEnemy() {
         // 적군 포켓몬스터 랜덤 생성
         System.out.println("야생 포켓몬이 나타났습니다");
         int enemyPick = (int)(Math.random()*3);
